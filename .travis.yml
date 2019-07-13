@@ -10,6 +10,6 @@ rvm:
   - 2.6.3
 # no binary available
 #   - 2.6.4
-before_install: gem install bundler -v 1.17.3
+before_install: gem install bundler -v 1.17.2
 script:
   - bundle exec rake 
