@@ -1,0 +1,19 @@
+# For more configurations see  https://rubocop.readthedocs.io/en/latest/configuration/
+
+AllCops:
+  TargetRubyVersion: 2.6.2
+
+Metrics/LineLength:
+  Max: 140
+
+Style/ClassAndModuleChildren:
+  Description: Checks style of children classes and modules.
+  StyleGuide: "#namespace-definition"
+  SafeAutoCorrect: false
+  AutoCorrect: false
+  Enabled: false
+  VersionAdded: '0.19'
+  EnforcedStyle: nested
+  SupportedStyles:
+  - nested
+  - compact

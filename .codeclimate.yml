@@ -1,0 +1,72 @@
+version: "2"         # required to adjust maintainability checks
+checks:
+  argument-count:
+    enabled: false
+    config:
+      threshold: 4
+  complex-logic:
+    enabled: false
+    config:
+      threshold: 4
+  file-lines:
+    enabled: false
+    config:
+      threshold: 250
+  method-complexity:
+    enabled: false
+    config:
+      threshold: 5
+  method-count:
+    enabled: false
+    config:
+      threshold: 20
+  method-lines:
+    enabled: false
+    config:
+      threshold: 25
+  nested-control-flow:
+    enabled: false
+    config:
+      threshold: 4
+  return-statements:
+    enabled: false
+    config:
+      threshold: 4
+  similar-code:
+    enabled: false
+    config:
+      threshold: # language-specific defaults. an override will affect all languages.
+  identical-code:
+    enabled: false
+    config:
+      threshold: # language-specific defaults. an override will affect all languages.
+
+plugins:
+  bundler-audit:
+    enabled: false
+  fixme:
+    enabled: false
+    exclude_patterns:
+      - README.md
+  markdownlint:
+    enabled: false
+  shellcheck:
+    enabled: true
+  rubocop:
+    enabled: true
+     # Avaiable channels: https://docs.codeclimate.com/docs/rubocop
+    channel: "rubocop-0-67"
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby:
+
+exclude_patterns:
+  - tmp/**/*
+  - vendor/**/*
+  - log/**/*
+  - db/**/*
+  - .bundle/
+  - benchmarks/**/*
+  - '*.log'

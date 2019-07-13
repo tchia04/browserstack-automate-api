@@ -1,4 +1,6 @@
-require "browserstack/automate/api/version"
+# frozen_string_literal: true
+
+require 'browserstack/automate/api/version'
 
 module Browserstack
   module Automate
