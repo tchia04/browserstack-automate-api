@@ -19,7 +19,6 @@ Gem::Specification.new do |spec|
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = 'https://rubygems.org'
-
     spec.metadata['homepage_uri'] = spec.homepage
     spec.metadata['source_code_uri'] = 'https://github.com/tchia04/browserstack-automate-api'
     spec.metadata['changelog_uri'] = 'https://github.com/tchia04/browserstack-atuomate-api/CHANGELOG.md'
@@ -40,5 +39,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.17'
   spec.add_development_dependency 'minitest', '~> 5.0'
   spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rspec', '~> 3.8.0'
   spec.add_development_dependency 'rubocop', '~> 0.67.2'
 end
