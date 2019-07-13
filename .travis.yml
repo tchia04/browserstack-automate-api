@@ -15,4 +15,5 @@ before_install:
   - bundle _1.17.2_ install
 
 script:
-  - bundle exec rake 
+  - bundle exec rake rubocop
+  - bundle exec rake rspec
