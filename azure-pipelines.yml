@@ -15,9 +15,10 @@ steps:
     versionSpec: '>= 2.5'
 
 - script: |
-    gem install bundler
+    gem install bundler -v 1.17.2
+    bundle _1.17.2_ install
     bundle install --retry=3 --jobs=4
-  displayName: 'bundle install'
+  displayName: 'bundle install --retry=3 --jobs=4'
 
 - script: bundle exec rake
   displayName: 'bundle exec rake'
