@@ -1,3 +1,5 @@
+inherit_from: .rubocop_todo.yml
+
 # For more configurations see  https://rubocop.readthedocs.io/en/latest/configuration/
 
 AllCops:
@@ -25,3 +27,12 @@ Style/BlockComments:
 Lint/HandleExceptions:
   Exclude:
     - Rakefile
+
+Style/CommentedKeyword:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
